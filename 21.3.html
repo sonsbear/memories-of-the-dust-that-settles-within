@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mystyle.css">
+
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="videos/falling.mp4" type="video/mp4">
+  </video>
+  
+  <script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+  
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  
+  </script>
+  <audio src="videos/audio8.mp3" autoplay loop></audio>
+<div>
+<a href="21.4.html" class="cfont">it must be time to dig again.</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+  <div>
+    <video autoplay muted loop id="myVideo2">
+      <source src="videos/drawfish.mp4" type="video/mp4">
+    </video>
+    
+    <script>
+    var video = document.getElementById("myVideo2");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+  </script> 
+  <audio src="videos/audio6.mp3" autoplay loop></audio>
+
+    <p class="cfont" style="top: 85%;">tell me, what <a href="20.html">shades of copper</a> can grow inside your lungs?</p>
+    <p class="cbfont" style="top: 16%;"><a href="18.html"><i>(i remember now)</i></a></p>
+  </div>
+</div>
+</body>
+</html>

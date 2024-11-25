@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    
+    .text {
+      position: fixed;
+      text-align: center;
+      color: #000000;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      padding-top: 20%;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    
+    .button {
+      position: fixed;
+      text-align: center;
+      color: #ffffff;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      padding-top: 600px;
+    }
+
+    #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+    }
+
+    .heading {
+      font-size: 35px;
+      color: white;
+      font-weight: 900;
+      text-shadow: 
+        0 0 5px #00ffff, 
+        0 0 10px #08ffff,
+        0 0 15px #ff00d4,
+        0 0 20px #ec20c0,
+        0 0 30px #ff8800;
+
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: rgb(255, 255, 255);
+      text-shadow:
+      0 0 5px #b44902;
+    }
+
+    .enter {
+      font-size: 25px;
+      color: rgb(255, 255, 255);
+      text-shadow:
+      0 0 5px #da45ad;
+      text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+
+  <video autoplay muted loop id="myVideo">
+    <source src="videos/titlepage bg.mp4" type="video/mp4">
+  </video>
+
+  <script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+  
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  
+  </script>
+  <audio src="videos/audio10.mp3" autoplay loop></audio>
+
+  <div class="text">
+    <p class="heading"> memories of the dust that settles </p>
+
+      </div> 
+      <div class="button">
+        <p class="subtitle"> < please tether your connective tissue to this website > </please></p>
+        <a href="1.html" class="enter">enter</a>
+  
+</body>
+</html>

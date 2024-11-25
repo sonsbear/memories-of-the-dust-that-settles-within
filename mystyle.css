@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  margin: 0;
+  background-image: url(videos/background.gif);
+}
+
+* {
+  box-sizing: border-box;
+    }
+
+a:link {
+  color: rgb(255, 255, 255);
+ }
+
+a:visited {
+  color: rgb(171, 194, 224);
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+  }
+
+.divider {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: transparent;
+}
+
+.cfont {
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.5;
+}
+
+.cbfont {
+  color: #ff0000;
+  font-size: 16px;
+  position: absolute;
+  text-align: right;
+  top: 65%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  line-height: 1.5;
+}
+
+.lfont {
+  position: absolute;
+  text-align: left;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.rfont {
+  position: absolute;
+  text-align: right;
+  top: 65%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.font {
+  color: white;
+  text-align: center;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.video  {
+  z-index: -1;
+}
+
+.carry
+{
+  font-size: 25px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000000;
+}

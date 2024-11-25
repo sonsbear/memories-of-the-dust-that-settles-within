@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="mystyle.css">
+  
+  <style>
+    .indent {
+  position: absolute;
+  text-align: center;
+  font-size: 23px;
+  top: 35%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+    }
+    </style>
+</head>
+<body>
+  <video autoplay muted loop id="myVideo2">
+    <source src="videos/jumpingbaggs.mp4" type="video/mp4">
+  </video>
+  
+  <script>
+  var video = document.getElementById("myVideo2");
+  var btn = document.getElementById("myBtn");
+  
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+</script> 
+<audio src="videos/audio6.mp3" autoplay loop></audio>
+  <div class="container">
+    <p class="lfont">
+      so when you can no longer return 
+      <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to the arms who first cradled you
+      <br><br><br>& <br>suddenly everything you touch <br><br> &nbsp; &nbsp; &nbsp;flees </p>
+        <p class="rfont"> what can you do but teach yourself to <a href="6.html">run</a>?
+    </p>
+  </div>
+
+</body>
+</html>

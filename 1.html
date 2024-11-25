@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  
+    .background-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    height: 39vh;
+    border-radius: 25px;
+    transform: translate(-50%, -50%); 
+    z-index: -1; 
+    box-shadow:
+      0 0 20px #ffffff,
+      0 0 30px #ffffff;
+      color: rgb(255, 255, 255);
+      text-shadow: 
+        0 0 10px #ff9f10;
+
+}
+.content {
+    position: relative;
+    z-index: 1; 
+}
+    .text {
+      position: relative;
+      z-index: 1; 
+      text-align: center;
+      color: rgb(185, 248, 238);
+      margin: auto;
+      width: 100vw;
+      height: 100vh;
+      box-sizing: border-box;
+      text-shadow: 
+        0 0 10px #ff9f10;
+
+    }
+
+    .redacted {
+      position: fixed;
+      text-align: right;
+      text-indent: 300px;
+      color: #c7baba;
+      bottom: 0;
+      margin-bottom: 30px;
+    }
+
+    .x {
+      position: fixed;
+      text-align: center;
+      text-indent: 800px;
+      color: #c7baba;
+      top: 0;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .absolute-center {
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+  .link {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+  }
+
+  #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -2; 
+
+    }
+
+    </style>
+</head>
+<body>
+
+  <video autoplay muted loop id="myVideo">
+    <source src="videos/page1 bg.mp4" type="video/mp4">
+  </video>
+
+  <script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+  
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  
+  </script>
+  <audio src="videos/audio2.mp3" autoplay loop></audio>
+<div class="background-box"> <br>&nbsp; x
+</div>
+<div class="content">
+  <div class="x">#`xx</div>
+  <div class="text">
+      <p class="absolute-center">
+        t|Hi$ webh0m3 µses COOKi€5 to ensure your <sup>ßest εxpe2iε(\)ce. </sup>
+        <br> <br> 
+        Your m&moяi£s will be µploa|]ed into the sHaя&d conscio[_]sness and may ße @t r|sk of being alt&red, chAn6ed
+        , or forg{}tten ÐurIng thiş proce$s. . . <br><br><br><br>
+        please carry the memories you find here with care. <br><br>
+        <a href="2.html" class="link">ACCEPT</a> 
+      </p>
+      </div>
+    </div>
+      <div class="redacted">[redacted]</div>
+</body>
+</html>
